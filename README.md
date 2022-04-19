@@ -5,3 +5,4 @@ This repository contains hands-on projects which would facilitate easy and illus
 3.Famous People
 
 All the SQL code are run in SQLite.
+
