@@ -1,0 +1,25 @@
+/*Create your own store! Your store should sell one type of things, like clothing or bikes, whatever you want your store to specialize in. You should have a table for all the
+items in your store, and at least 5 columns for the kind of data you think you'd need to store. You should sell at least 15 items, and use select statements to order your items
+by price and show at least one statistic about the items*/
+
+
+CREATE TABLE clothes(id INTEGER PRIMARY KEY ,cloth_type TEXT,brand TEXT, price INTEGER,Discount_in_percent INTEGER);
+
+INSERT INTO clothes VALUES(1,"Top","Levis",3500,15);
+INSERT INTO clothes VALUES(2,"Jeans","Levis",3000,15);
+INSERT INTO clothes VALUES(3,"Kurti","Manyavar",5000,15);
+INSERT INTO clothes VALUES(4,"Salwar","Manyavar",2500,15);
+INSERT INTO clothes VALUES(5,"Lehenga","Manyavar",12500,15);
+INSERT INTO clothes VALUES(6,"Chinos","Levis",4500,15);
+INSERT INTO clothes VALUES(7,"Palazo","Aurelia",3500,15);
+INSERT INTO clothes VALUES(8,"T-shirt","Levis",1500,15);
+INSERT INTO clothes VALUES(9,"Shirt","Levis",3000,15);
+INSERT INTO clothes VALUES(10,"Sherwani","Manyavar",4500,15);
+INSERT INTO clothes VALUES(11,"Chunpa","Manyavar",8500,15);
+INSERT INTO clothes VALUES(12,"Jeans","Killer",4500,15);
+INSERT INTO clothes VALUES(13,"Top","R-Trends",3300,15);
+INSERT INTO clothes VALUES(14,"Top","Levis",3500,15);
+INSERT INTO clothes VALUES(15,"Jeans","Pepe-Jeans",3500,15);
+SELECT * FROM clothes ORDER BY price;
+SELECT SUM(price) FROM clothes GROUP BY cloth_type;
+
